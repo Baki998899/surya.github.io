@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Wild Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Intro Section -->
+    <section id="intro">
+        <h1 class="glitch" data-text="Hey, I’m [Your Name]">Hey, I’m [Your Name]</h1>
+        <p class="tagline">A chaotic creator of epic stuff.</p>
+        <button onclick="scrollToSection('experience')">Dive In</button>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Experiences</h2>
+        <div class="card-container">
+            <div class="card" onmouseover="tiltCard(this)">
+                <h3>Job 1</h3>
+                <p>Company Name | 2022 - Present</p>
+                <p>Built wild things and broke the internet (in a good way).</p>
+            </div>
+            <div class="card" onmouseover="tiltCard(this)">
+                <h3>Job 2</h3>
+                <p>Freelance | 2020 - 2022</p>
+                <p>Designed chaos and coded madness for clients.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card" onclick="flipCard(this)">
+                <div class="front">Project 1</div>
+                <div class="back">A neon-fueled app that does [cool thing].</div>
+            </div>
+            <div class="project-card" onclick="flipCard(this)">
+                <div class="front">Project 2</div>
+                <div class="back">A glitchy website for [wild idea].</div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
